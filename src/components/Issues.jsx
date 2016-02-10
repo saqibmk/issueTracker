@@ -5,13 +5,10 @@ import PureRenderMixin from 'react-addons-pure-render-mixin';
 import * as actionCreators from '../actions'
 
 
-
-
-
 export const Issues = React.createClass({
-
+  mixins: [PureRenderMixin],
   render: function() {
-    return <div className="voting">
+    return <div>
         <Issue {...this.props}/>
     </div>;
   }
